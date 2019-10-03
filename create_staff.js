@@ -4,14 +4,19 @@ var full_name, email, address, phone, DOB, profile_pic, submit_btn;
 
 document.getElementById('submit_btn').addEventListener('click', function(){
     getValueFromElements();
+    clearInputELement();
+    
+})
 
+// function to clear input element after clicking create button
+function clearInputELement(){
     document.getElementById('fullname').value = '';
     document.getElementById('email').value = '';
     document.getElementById('address').value = '';
     document.getElementById('phone').value = '';
     document.getElementById('dob').value = '';
     document.getElementById('profile').value = '';
-})
+}
 
 /**
  * Get values from the elements
@@ -24,6 +29,12 @@ function getValueFromElements(){
     DOB = document.getElementById('dob').value;
     profile_pic = document.getElementById('profile').value;
 
+    document.getElementById('fullname').value = ''
+    document.getElementById('email').value = '';
+    document.getElementById('address').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('dob').value = '';
+    document.getElementById('profile').value = '';
     createStaff(full_name, email, address, phone, DOB, profile_pic);
 }
 
