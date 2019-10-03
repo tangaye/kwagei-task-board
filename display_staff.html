@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Staff</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 20px auto;
+        }
+        table {
+            width: 750px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td{
+            text-align: center;
+        }
+        td, th {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        tr > th {
+            background: steelblue;
+        }
+
+        tr:nth-child(odd) {
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Date of Birth</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>John Kollie</td>
+                    <td>john@gmail.com</td>
+                    <td>12th street</td>
+                    <td>0775647362</td>
+                    <td>October 9, 1998</td>
+                </tr>
+            </table>
+    </div>
+    <script src="./display-staff.js"></script>
+</body>
+</html>
