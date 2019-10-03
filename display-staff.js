@@ -17,6 +17,6 @@ for(count = 0; count< staffs.length; count ++){
             <td>${staffs[count].phone}</td>
             <td>${staffs[count].profile_pic}</td>
         </tr>
-    `)
+    `);
    
 }
