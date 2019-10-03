@@ -1,9 +1,10 @@
-var staff_arr = [], staff_obj;
+var staff_obj;
 var full_name, email, address, phone, DOB, profile_pic, submit_btn;
 
 
 document.getElementById('submit_btn').addEventListener('click', function(){
     getValueFromElements();
+
     clearInputELement();
     
 })
