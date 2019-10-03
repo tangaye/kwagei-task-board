@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Staff</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 760px;
+            border: 1px solid black;
+        }
+
+        input {
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+
+        }
+
+        form {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            font-size: 18px;
+            background-color: #FF9900;
+            color: #fff;
+            padding: 10px;
+            margin-left: 80px;
+            margin-bottom: 10px;
+            width: 100px;
+            border: 0;
+            border-radius: 5px;
+            display: block;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            padding-left: 80px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter Staff Details</h1>
+        <form>
+            <label for="fullname">Name:</label>
+            <input type="text" placeholder="Carlos Nah"> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="cnah27@gmail.com"> <br>
+
+            <label for="address">Address:</label>
+            <input type="text" placeholder="Chocolate city, Monrovia"> <br>
+
+            <label for="phone">Contact:</label>
+            <input type="tel" placeholder="0776728619"> <br>
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="date"> <br>
+
+            <label for="profile">Profile Photo:</label>
+            <input type="file" id="test"> <br>
+
+            <button type="submit">Create</button>
+        </form>
+    </div>
+</body>
+
+</html>
