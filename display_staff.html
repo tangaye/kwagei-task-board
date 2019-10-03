@@ -25,25 +25,38 @@
             font-size: 16px;
         }
 
-        tr > th {
-            background: steelblue;
+        th {
+            background: rgb(237, 170, 2);
         }
 
-        tr:nth-child(odd) {
+        tr:nth-child(even) {
             background: #f1f1f1;
+        }
+        tbody>tr:hover {
+            background: steelblue;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="container">
-            <table>
+        <table>
+            <thead>
+                <th>#</th>
+                <th>Fullname</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Date of Birth</th>
+            </thead>
+            <tbody class="display_staff">
                 <tr>
-                    <th>#</th>
-                    <th>Fullname</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                    <th>Phone</th>
-                    <th>Date of Birth</th>
+                    <td>1.</td>
+                    <td>John Kollie</td>
+                    <td>john@gmail.com</td>
+                    <td>12th street</td>
+                    <td>0775647362</td>
+                    <td>October 9, 1998</td>
                 </tr>
                 <tr>
                     <td>1.</td>
@@ -53,7 +66,8 @@
                     <td>0775647362</td>
                     <td>October 9, 1998</td>
                 </tr>
-            </table>
+            </tbody> 
+        </table>
     </div>
     <script src="./display-staff.js"></script>
 </body>
