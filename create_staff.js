@@ -3,9 +3,14 @@ var full_name, email, address, phone, DOB, profile_pic, submit_btn;
 
 
 document.getElementById('submit_btn').addEventListener('click', function(){
-    console.log('Clicked');
-    
     getValueFromElements();
+
+    document.getElementById('fullname').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('address').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('dob').value = '';
+    document.getElementById('profile').value = '';
 })
 
 /**
