@@ -20,7 +20,7 @@ function createTask(task) {
     const date = new Date();
     task_obj = {
         task: task,
-        date_created: date
+        date_created: date.toDateString()
     };
     tasks.push(task_obj);
     localStorage.setItem('task', JSON.stringify(tasks));

@@ -8,7 +8,7 @@ function displayTask(datas) {
     var count = 0
      datas.forEach(data => {
         count += 1
-         list-id.innerHTML += `
+         list_id.innerHTML += `
          <tr>
             <td>${count}</td>
             <td>${data.task} </td> 
