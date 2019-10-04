@@ -19,32 +19,25 @@
             background:#FF9900;
         }
         table{
-            width: 700px;
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        td{
-            padding: 15px;
-        }
     </style>
 </head>
 <body>
     <div id="container">
         <h1>List of Tasks</h1>
-        <table id="task-list">
-            <tr>
-                <td>Work on HPA website</td>
-                <td>8:00am</td>
-            </tr>
-            <tr>
-                <td>Have lunch</td>
-                <td>12:00</td>
-            </tr>
-            <tr>
-                <td>Watch Practical JS videos </td>
-                <td>1:00pm</td>
-            </tr>
+        <table>
+            <thead>
+                <th>No</th>
+                <th>Task</th>
+                <th>Date Created</th>
+            </thead>
+            <tbody id="task-list">
+            </tbody>
         </table>
-
     </div>
 </body>
+<script src="./js/display-task.js"></script>
 </html>
