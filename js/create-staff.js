@@ -5,9 +5,10 @@ var address = document.getElementById('address');
 var phone = document.getElementById('phone');
 var date_of_birth = document.getElementById('dob');
 var profile_pic = document.getElementById('profile');
+var submit_btn = document.getElementById('submit_btn');
 
 // Event listener for submit button
-document.getElementById('submit_btn').addEventListener('click', function () {
+submit_btn.addEventListener('click', function () {
 
     // Create staff
     createStaff({
@@ -22,12 +23,13 @@ document.getElementById('submit_btn').addEventListener('click', function () {
     // Clear staff form
     clearStaffForm();
 
-})
+});
 
 
 
 /**
- * Want to get user input and store it in local storage when the submit button is clicked
+ * Stores user input in local storage when the submit button is clicked
+ * @param {Object} staff_obj - Object containing staff details
  */
 function createStaff(staff_obj) {
 
