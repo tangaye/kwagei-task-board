@@ -1,1 +1,0 @@
-var staff_arr = [];
