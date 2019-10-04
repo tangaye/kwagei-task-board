@@ -1,12 +1,13 @@
 var tasks = [];
-var input_val, task_obj;
+var task_obj;
+var input_val = document.getElementById('new_task');
 
 /**
  * Get value from input element when the submit button is clicked
  */
 document.getElementById('submit').addEventListener('click', function(){
-    input_val = document.getElementById('new_task').value;
-    createTask(input_val);
+    createTask(input_val.value);
+    input_val.value = "";
 })
 
 
