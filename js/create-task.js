@@ -8,7 +8,8 @@ var input_val = document.getElementById('new_task');
 document.getElementById('submit').addEventListener('click', function(){
     createTask(input_val.value);
     input_val.value = "";
-})
+});
+
 
 
 /*
@@ -19,7 +20,7 @@ function createTask(task) {
     const date = new Date();
     task_obj = {
         task: task,
-        date_created: date.now
+        date_created: date.now()
     };
     tasks.push(task_obj);
     localStorage.setItem('task', JSON.stringify(tasks));
