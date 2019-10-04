@@ -2,13 +2,12 @@ var staffTableBody = document.querySelector('.display_staff');
 var staffs = JSON.parse(localStorage.getItem('staff_data'));
 
 
-
 // Loop through staff array
-for(count = 0; count< staffs.length; count ++){
+for (count = 0; count < staffs.length; count++) {
 
     // Add staff to table body
 
-    staffTableBody.insertAdjacentHTML('beforeend', `
+    var markup = `
         <tr>
             <td>${count+1}</td>
             <td>${staffs[count].full_name}</td>
@@ -18,6 +17,8 @@ for(count = 0; count< staffs.length; count ++){
             <td>${staffs[count].dob}</td>
             <td>${staffs[count].profile_pic}</td>
         </tr>
-    `);
-   
+    `;
+
+    staffTableBody.insertAdjacentHTML('beforeend', markup);
+
 }
