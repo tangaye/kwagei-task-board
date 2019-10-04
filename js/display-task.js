@@ -12,7 +12,7 @@ function displayTask(datas) {
          <tr>
             <td>${count}</td>
             <td>${data.task} </td> 
-            <td> ${data.date_created}</td>
+            <td>${data.date_created}</td>
         </tr>
          `;
      })
