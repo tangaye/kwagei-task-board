@@ -5,9 +5,15 @@ var list_id = document.getElementById('task-list');
 *@param displayTask - A function that takes in an array of objects and render it dynamically to the page
 */
 function displayTask(datas) {
+    var count = 0
      datas.forEach(data => {
+        count += 1
          list_id.innerHTML += `
-            <li>${data.task} <br> <span> ${data.date_created}</span></li>
+         <tr>
+            <td>${count}</td>
+            <td>${data.task} </td> 
+            <td> ${data.date_created}</td>
+        </tr>
          `;
      })
 }
