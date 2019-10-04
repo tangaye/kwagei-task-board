@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Tasks</title>
+
+    <style>
+        .container{
+            margin: 40px auto;
+            border: 2px solid black;
+            width: 500px;
+            padding:30px; 
+        }
+
+        input{
+            font-size: 15px;
+            width: 450px;
+            padding: 15px;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        button{
+            font-size: 20px;
+           margin-left: 200px; 
+           padding: 10px;
+           width: 100px;
+           background: #FF9900;
+           border: none;
+           border-radius: 5px;
+           margin-top: 20px;
+           color: white;
+        }
+        
+        button:hover{
+            cursor: pointer; 
+        }
+    
+    </style>
+</head>
+  
+<body>
+
+    <div class="container">
+        <h1>Create Task</h1>
+        <form>
+            <input  id = "new_task" type="text" placeholder="Build HPA website">
+            <button id="submit" type="button">Create</button>
+        </form>
+
+    </div>
+
+    <script src="./js/create-task.js"></script>
+</body>
+</html>
