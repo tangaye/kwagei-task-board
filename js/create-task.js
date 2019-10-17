@@ -17,10 +17,9 @@ document.getElementById('submit').addEventListener('click', function(){
 * and stores it in the tasks array
 */
 function createTask(task) {
-    const date = new Date();
     task_obj = {
         task: task,
-        date_created: date.toDateString()
+        date_created: new Date().toDateString()
     };
     tasks.push(task_obj);
     localStorage.setItem('task', JSON.stringify(tasks));
