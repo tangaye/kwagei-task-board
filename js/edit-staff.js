@@ -5,7 +5,7 @@ var address_input = document.getElementById('edit-staff-address');
 var contact_input = document.getElementById('edit-staff-phone-number');
 var DOB_input = document.getElementById('edit-staff-dob');
 var staff_id = document.getElementById('edit-staff-id');
-var staff_data = JSON.parse(localStorage.getItem('staff_data'));
+var staff_data = JSON.parse(localStorage.getItem('task'));
 var button_id = 0;
 
 buttons.forEach(button =>{

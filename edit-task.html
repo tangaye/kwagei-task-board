@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Task</title>
+    <style>
+    .container{
+        margin: 30px auto;
+        margin-left: 400px;
+        margin-right: 400px;
+        padding: 50px;
+        border: 2px solid black;
+    }
+    input[type="text"]{
+        width: 80%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    input[type="button"]{
+        padding: 8px;
+        background:  #FF9900;
+        border-style: none;
+        color: white;
+        font-size: 17px;
+        display: block;
+        margin-top: 20px;
+    }
+    label{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <label>Task Name</label>
+            <input type="text" id="edit-task-name" >
+            <input type="button" id="updata-task"  value="Updata Task">
+        </form>
+    </div>
+    
+    <script src="./js/edit-task.js"></script>
+</body>
+</html>
