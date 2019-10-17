@@ -16,9 +16,8 @@ for (count = 0; count < staffs.length; count++) {
             <td>${staffs[count].phone}</td>
             <td>${staffs[count].dob}</td>
             <td>${staffs[count].profile_pic}</td>
-            <td><a href="edit-staff.html"><button id="edit-button" onclick="editStaff()">Edit</button></a>
-        </tr>
-    `;
+            <td><button  id="${count}"><a href="edit-staff.html">Edit</a></button>
+        </tr>`;
 }
 
 staff_body_table.insertAdjacentHTML('beforeend', markup);
