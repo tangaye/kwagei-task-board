@@ -6,5 +6,5 @@ var contact_input = document.getElementById('');
 var DOB_input = document.getElementById('');
 
 buttons.addEventListener('click', function(event) {
-    console.log(event);
+    console.log(event.target.id);
 })
