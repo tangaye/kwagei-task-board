@@ -16,11 +16,7 @@ for (count = 0; count < staffs.length; count++) {
             <td>${staffs[count].phone}</td>
             <td>${staffs[count].dob}</td>
             <td>${staffs[count].profile_pic}</td>
-<<<<<<< HEAD
-            <td><button   ><a href="edit-staff.html" target="_blank" id="${count}">Edit</a></button>
-=======
-            <td><button id="${count}"><a href="edit-staff.html" target="_blank">Edit</a></button>
->>>>>>> df7a94b32fba326761af574720eac21b8dd2c933
+            <td><button><a href="edit-staff.html" target="_blank" id="${count}">Edit</a></button>
         </tr>`;
 }
 
