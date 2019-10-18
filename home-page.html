@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Display Tasks</title>
+    <title>Dashboard</title>
+
     <style>
-          header{
+        header{
             width: 1367px;
             height: 100px;
             background: black;
             margin-top: -9px;
             margin-left: -9px;
         }
-        .links a{
+        a{
             text-decoration: none;
             color: rgb(221, 103, 6);
             font-size: 20px;
             text-emphasis: epphasis;
             margin-left: 50px;
         }
-        img{color: rgb(221, 103, 6);
+        img{
             width: 200px;
         }
         .container{
-            color: rgb(221, 103, 6);
             padding-top: 40px;
             display: flex;
         }
@@ -60,7 +60,7 @@
         }
         body{
             font-family: sans-serif;
-            /* background: #f1f1f1; */
+            background: #f1f1f1;
         }
         .inner_box1{
             background: white;
@@ -68,58 +68,10 @@
             font-size: 35px;
             border-right: 2px solid black;
         }
-        #container{
-            margin: 0 auto;
-            width: 600px;
-            color: black
-        }
-        h1{
-            text-align: center
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th{
-            color: #fff;
-            background-color: #000;
-            font-weight: bold;
-
-            
-        }
-
-        tr:nth-child(even){
-            background: #f1f1f1;
-        }
-
-        table, tr, th ,td{
-            border: 1px solid black;
-
-        }
-        td, th{
-            text-align:center;
-            padding: 10px
-        }
-
-        button {
-            font-size: 18px;
-            background-color: #FF9900;
-            color: #fff;
-            padding: 10px;
-            width: 100px;
-            border: 0;
-            border-radius: 5px;
-
-        }
-
-        a {
-            text-decoration: none;
-            color: #f1f1f1;
-        }
-    
     </style>
 </head>
 <body>
+    
     <header>
         <div class="container">
             <img src="kwagei-long.png" alt="kwagei-long">
@@ -132,21 +84,38 @@
             </div>
         </div>
     </header>
-    <div id="container">
-        <h1>List of Tasks</h1>
-        <table>
-            <thead>
-                <th>No</th>
-                <th>Task</th>
-                <th>Date Created</th>
-                <th>Actions</th>
-                <th>Actions</th>
-            </thead>
-            <tbody id="task-list">
-            </tbody>
-        </table>
+
+    <div class="dashboard_details">
+        <div class="first_row">
+            <div class="box1">
+                <div class="inner_box1">6</div>
+                <div class="inner_box2">Number Of Staff</div>
+            </div>
+            <div class="box2">
+                <div class="inner_box1">25</div>
+                <div class="inner_box2">Number Of Tasks</div>
+            </div>
+            <div class="box3">
+                <div class="inner_box1">20</div>
+                <div class="inner_box2">Completed Task</div>
+            </div>
+        </div>
+        <div class="second_row">
+            <div class="box4">
+                <div class="inner_box1">1</div>
+                <div class="inner_box2">Incompleted Task</div>
+            </div>
+            <div class="box5">
+                <div class="inner_box1">2</div>
+                <div class="inner_box2">Assign Task</div>
+            </div>
+            <div class="box6">
+                <div class="inner_box1">2</div>
+                <div class="inner_box2">Unassign Task</div>
+            </div>
+        </div>
+        
     </div>
+
 </body>
-<script src="./js/display-task.js"></script>
-<script src="./js/edit-task.js"></script>
 </html>

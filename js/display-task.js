@@ -22,10 +22,5 @@ function displayTask(datas) {
      })
 }
 
-delete_button.forEach(button => {
-    button.addEventListener('click', function(event){
-        console.log(event.target.id)
-    })
-})
 
 displayTask(data_from_db)
