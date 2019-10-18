@@ -1,14 +1,11 @@
-const assignTask = document.querySelectorAll("[data-task-id]");
+const assignTask = document.querySelector("#assign-task");
 const listOfUsers = document.querySelector("#list-of-users");
 const getUsers = JSON.parse(localStorage.getItem("staff_data"));
+const tasks = JSON.parse(localStorage.getItem("task"))
+let taskName = "";
 const checkbox_arr = [];
+let task = 0;
 
-assignTask.forEach((task) => {
-    task.addEventListener("click", (e) => {
-        e.preventDefault();
-        console.log(task.id)
-    })
-})
 
 
 // Get users from  localStorage and display them 
@@ -28,5 +25,19 @@ function pushUser(user) {
     console.log(checkbox_arr)
     return checkbox_arr;
 }
+
+document.body.addEventListener("click", function(e) {
+    e.preventDefault();
+    if(e.target.getAttribute("data-task-id") == 'assign') {
+        taskName = tasks[e.target.id]
+    }
+})
+
+console.log("Me: ",taskName)
+
+assignTask.addEventListener("click", function(e) {
+    e.preventDefault();
+    
+})
 
 console.log("Checkbox: ", checkbox_arr)
