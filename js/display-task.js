@@ -13,7 +13,7 @@ function displayTask(datas) {
             <td>${count}</td>
             <td>${data.task} </td> 
             <td>${data.date_created}</td>
-            <td><button type="button"><a id=${count-1} href="edit-task.html" target="_blank">Edit</a></button>
+            <td><a id=${count-1} href="edit-task.html" target="_blank"><button type="button">Edit</button></a>
         </tr>
          `;
      })

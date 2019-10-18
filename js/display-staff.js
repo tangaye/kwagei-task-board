@@ -1,6 +1,7 @@
 var staff_body_table = document.querySelector('.display_staff');
 var staffs = JSON.parse(localStorage.getItem('staff_data'));
 
+console.log(staffs)
 
 // Loop through staff array
 for (count = 0; count < staffs.length; count++) {
@@ -16,8 +17,12 @@ for (count = 0; count < staffs.length; count++) {
             <td>${staffs[count].phone}</td>
             <td>${staffs[count].dob}</td>
             <td>${staffs[count].profile_pic}</td>
-            <td><button><a href="edit-staff.html" target="_blank" id="${count}">Edit</a></button>
+            <td><a href="edit-staff.html" target="_blank" id="${count}"><button>Edit</button></a></td>
+            <td><a href="#""><button delete-data="delete" id="${count}">Delete</button></a></td>
+
         </tr>`;
 }
+
+
 
 staff_body_table.insertAdjacentHTML('beforeend', markup);

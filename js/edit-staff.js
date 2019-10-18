@@ -5,7 +5,7 @@ var address_input = document.getElementById('edit-staff-address');
 var contact_input = document.getElementById('edit-staff-phone-number');
 var DOB_input = document.getElementById('edit-staff-dob');
 var staff_id = document.getElementById('edit-staff-id');
-var staff_data = JSON.parse(localStorage.getItem('task'));
+var staff_data = JSON.parse(localStorage.getItem('staff_data'));
 var button_id = 0;
 
 buttons.forEach(button =>{
@@ -14,10 +14,11 @@ buttons.forEach(button =>{
     })
 })
 
+console.log(staff_data)
+
 function editStaff(id){
-    console.log(id)
-    staff_id.value = button_id+1;
-    full_name_input.value = staff_data[id].full_name ;
+    staff_id.value = id+1;
+    full_name_input.value = staff_data[id].full_name;
     email_input.value = staff_data[id].email;
     address_input.value = staff_data[id].address;
     contact_input.value = staff_data[id].phone;

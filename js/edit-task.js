@@ -18,6 +18,8 @@ function editTask(){
     editTaskInput.value = getTaskFromLocalstorage[getButtonId].task;
 }
 
+editTask();
+
 editTaskSubmitInput.addEventListener('click', (event)=>{
     updateTask()
 })
