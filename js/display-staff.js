@@ -4,11 +4,13 @@ var staffs = JSON.parse(localStorage.getItem('staff_data'));
 console.log(staffs)
 
 // Loop through staff array
+var markup = "";
 for (count = 0; count < staffs.length; count++) {
 
     // Add staff to table body
 
-    var markup = `
+    markup += ` 		
+
         <tr>
             <td>${count+1}</td>
             <td>${staffs[count].full_name}</td>
@@ -18,7 +20,7 @@ for (count = 0; count < staffs.length; count++) {
             <td>${staffs[count].dob}</td>
             <td>${staffs[count].profile_pic}</td>
             <td><a href="edit-staff.html" target="_blank" id="${count}"><button>Edit</button></a></td>
-            <td><a href="#""><button delete-data="delete" id="${count}">Delete</button></a></td>
+            <td><a href="#" id="${count}"><button delete-data="delete">Delete</button></a></td>
 
         </tr>`;
 }

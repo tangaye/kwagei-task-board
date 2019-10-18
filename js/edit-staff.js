@@ -7,14 +7,15 @@ var DOB_input = document.getElementById('edit-staff-dob');
 var staff_id = document.getElementById('edit-staff-id');
 var staff_data = JSON.parse(localStorage.getItem('staff_data'));
 var button_id = 0;
+console.log('yes',staff_id)
 
 buttons.forEach(button =>{
     button.addEventListener('click', function(event){
         button_id = event.target.id;
+        console.log('hmmmm', button_id)
     })
 })
 
-console.log(staff_data)
 
 function editStaff(id){
     staff_id.value = id+1;
@@ -24,7 +25,6 @@ function editStaff(id){
     contact_input.value = staff_data[id].phone;
     DOB_input.value = staff_data[id].dob;
 }
-editStaff(button_id);
 
 function updateStaff(){
     console.log("Home :", button_id)

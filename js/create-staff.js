@@ -1,4 +1,4 @@
-var staff_arr = [];
+var staff_arr = JSON.parse(localStorage.getItem("staff_data"));
 var full_name = document.getElementById('fullname');
 var email = document.getElementById('email');
 var address = document.getElementById('address');
@@ -24,7 +24,6 @@ submit_btn.addEventListener('click', function () {
     clearStaffForm();
 
 });
-
 
 
 /**
