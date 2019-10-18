@@ -19,8 +19,8 @@ for (count = 0; count < staffs.length; count++) {
             <td>${staffs[count].phone}</td>
             <td>${staffs[count].dob}</td>
             <td>${staffs[count].profile_pic}</td>
-            <td><a href="edit-staff.html" target="_blank" id="${count}"><button>Edit</button></a></td>
-            <td><a href="#" id="${count}"><button delete-data="delete">Delete</button></a></td>
+            <td><a href="edit-staff.html" target="_blank"><button type="submit" data-staff="edit-staff" id="${count}">Edit</button></a></td>
+            <td><a href="#"><button button="submit" id="${count}" delete-data="delete">Delete</button></a></td>
 
         </tr>`;
 }
