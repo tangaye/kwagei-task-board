@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #login_container, #sign-up_container{
+            margin: 40px auto;
+            width: 48%;
+            box-shadow: 5px 15px 15px 15px #f1f1f1;
+            border-radius: 5px;
+            margin-top: 90px;
+        }
+        #sign-up_container{
+            display: none;
+        }
+        input{
+            border-radius: 5px 5px 5px 5px;
+            color: #0d0d0d;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 70%;
+            margin-left: 65px;
+            border: 2px solid #f6f6f6;
+        }
+        input:focus {
+            background-color: #fff;
+            border-bottom: 2px solid #5fbae9;
+        }
+        input:placeholder {
+            color: #cccccc;
+        }
+        button{
+            margin-top: 30px;
+            margin-left: 35%;
+            border-style: none;
+            padding: 15px;
+            width: 200px;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 5px;
+            background: #FF9900;
+            color: white;
+            box-shadow: 5px 5px 5px rgb(252, 239, 218)
+        }
+        p{
+            display: inline;
+            margin-left: 23%;
+            font-size: 20px;
+            padding-top: 50px;
+            padding-top: 500px;
+        }
+        p:hover{
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+        .form_footer{
+            background-color: #f6f6f6;
+            border-top: 1px solid #dce8f1;
+            padding: 25px;
+            text-align: center;
+            -webkit-border-radius: 0 0 10px 10px;
+            border-radius: 0 0 10px 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login_container">
+        <p id="login1">Login</p>
+        <p id="signin1">Sign-Up</p>
+        <form>
+            <input type="text" id="loginusername" placeholder="User-Name">
+            <input type="password" id="loginpassword" placeholder="Password">
+            <button id="loginButton">Login</button>
+        </form>
+        <div class="form_footer">
+            <a href="#">Forget Password?</a>
+        </div>
+    </div>
+    <div id="sign-up_container">
+        <p id="login2">Login</p>
+        <p id="signin2">Sign-Up</p>
+        <form>
+            <input type="text" id="signusername" placeholder="User-Name">
+            <input type="password" id="signpassword" placeholder="Password">
+            <button onclick="signIn()">Sign-UP</button>
+        </form>
+        <div class="form_footer">
+            <a href="#">Forget Password?</a>
+        </div>
+    </div>
+
+    <script src="./js/login-page.js"></script>
+</body>
+</html>
