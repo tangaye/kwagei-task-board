@@ -76,12 +76,12 @@
   /* Edit Task */
 
 
-.container{
+/* .container{
   margin: 30px auto;
   width: 80%;
   padding: 50px;
   border: 2px solid rgb(129, 105, 105);
-}
+} */
 input[type="text"] {
   width: 90%;
   padding: 10px;

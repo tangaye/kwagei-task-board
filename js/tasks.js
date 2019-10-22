@@ -25,10 +25,12 @@ function createTask(task) {
 /*
 *@param displayTask - A function that takes in an array of objects and render it dynamically to the page
 */
-function displayTask(datas) {
+function displayTask() {
+    var get_data_from_db = JSON.parse(localStorage.getItem("task"));
     var list_id = document.getElementById('task-list');
     var count = 0
-    datas.forEach(data => {
+    get_data_from_db.forEach(data => {
+        console.log(data)
         count += 1
         list_id.innerHTML += `
          <tr>
@@ -40,7 +42,7 @@ function displayTask(datas) {
          `;
     })
 }
-//displayTask(data_from_db)
+//displayTask()
 
 
 
