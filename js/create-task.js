@@ -1,27 +1,11 @@
-var tasks = [];
-var task_obj;
-var input_val = document.getElementById('new_task');
-
 /**
- * Get value from input element when the submit button is clicked
- */
-document.getElementById('submit').addEventListener('click', function(){
-    createTask(input_val.value);
-    input_val.value = "";
-});
-
-
-
-/*
-* @param {string} task - takes in a task 
-* and stores it in the tasks array
+* Get value from input element when the submit button is clicked
 */
-function createTask(task) {
-    task_obj = {
-        task: task,
-        date_created: new Date().toDateString()
-    };
-    tasks.push(task_obj);
-    localStorage.setItem('task', JSON.stringify(tasks));
-    return tasks;
-}
+var submit_task_btn = document.getElementById("submit-create-task");
+var create_task_input_val = document.getElementById('new_task');
+
+submit_task_btn.addEventListener("click", function(e) {
+    console.log(create_task_input_val.value)
+    createTask(create_task_input_val.value)
+    create_task_input_val.value = "";
+})

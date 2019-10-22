@@ -21,7 +21,7 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -71,3 +71,32 @@
     background-color: #5cb85c;
     color: white;
   }
+
+
+  /* Edit Task */
+
+
+.container{
+  margin: 30px auto;
+  width: 80%;
+  padding: 50px;
+  border: 2px solid rgb(129, 105, 105);
+}
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+}
+input[type="button"] {
+  padding: 8px;
+  background:  #FF9900;
+  border-style: none;
+  color: white;
+  font-size: 17px;
+  display: block;
+  margin: 10px 0;
+}
+label{
+  display: block;
+  margin: 10px 0;
+}
