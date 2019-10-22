@@ -8,7 +8,69 @@
     <title>Display Tasks</title>
     <link rel="stylesheet" href="css/modal.css">
     <style>
-        #container {
+          header{
+            width: 100%;
+            height: 100%;
+            background: black;
+            margin-top: -9px;
+            margin-left: -9px;
+        }
+        .links a{
+            text-decoration: none;
+            color: rgb(221, 103, 6);
+            font-size: 20px;
+            text-emphasis: epphasis;
+            margin-left: 50px;
+        }
+        img{color: rgb(221, 103, 6);
+            width: 200px;
+        }
+        .container{
+            color: rgb(221, 103, 6);
+            padding-top: 40px;
+            display: flex;
+        }
+        .links{
+            margin-left: 200px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .dashboard_details{
+            margin: 50px auto;
+            width: 99%;
+        }
+        .first_row{
+            display: flex;
+        }
+        .second_row{
+            display: flex;
+        }
+        .box1, .box2, .box3, .box4, .box5, .box6{
+            width: 50%;
+            /* padding: 50px; */
+            background-color: white;
+            margin: 30px;
+            display: flex;
+            border: 2px solid black;
+        }
+        .inner_box1, .inner_box2{
+            padding: 40px;
+            font-weight: bold;
+            font-size: 17px;
+            color:black;
+        }
+        body{
+            font-family: sans-serif;
+            /* background: #f1f1f1; */
+        }
+        .inner_box1{
+            background: white;
+            padding-right: 100px;
+            font-size: 35px;
+            border-right: 2px solid black;
+        }
+        #container{
             margin: 0 auto;
             width: 80%;
             color: black
@@ -102,6 +164,18 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <img src="kwagei-long.png" alt="kwagei-long">
+            <div class="links">
+                <a href="home-page.html">Dashboard</a>
+                <a href="display-staff.html">Staff</a>
+                <a href="display-tasks.html">Task</a>
+                <a href="">Assigned Task</a>
+                <a href="">Unasign Task</a> 
+            </div>
+        </div>
+    </header>
     <div id="container">
         <h1>List of Tasks</h1>
         <table>
@@ -109,7 +183,7 @@
                 <th>No</th>
                 <th>Task</th>
                 <th>Date Created</th>
-                <th colspan="2">Actions</th>
+                <th colspan="3">Actions</th>
             </thead>
             <tbody id="task-list">
             </tbody>
@@ -152,7 +226,6 @@
         </div>
 </body>
 <script src="./js/tasks.js"></script>
-<script src="./js/display-task.js"></script>
 <script src="./js/modal.js"></script>
 
 </html>

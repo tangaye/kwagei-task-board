@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Display Staff</title>
+    <title>Dashboard</title>
+
     <style>
-          header{
+        header{
             width: 1367px;
             height: 100px;
             background: black;
@@ -24,7 +24,7 @@
         img{
             width: 200px;
         }
-        .container1{
+        .container{
             padding-top: 40px;
             display: flex;
         }
@@ -68,50 +68,12 @@
             font-size: 35px;
             border-right: 2px solid black;
         }
-        .container {
-            width: 800px;
-            margin: 20px auto;
-        }
-
-        table {
-            width: 750px;
-            border-collapse: collapse;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-        td {
-            text-align: center;
-        }
-
-        td,
-        th {
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        th {
-            background: #FF9900;
-        }
-        button{
-            font-size: 18px;
-            background-color: #FF9900;
-            color: #fff;
-            padding: 10px;
-            width: 100px;
-            border: 0;
-        }
-
     </style>
 </head>
-
 <body>
+    
     <header>
-        <div class="container1">
+        <div class="container">
             <img src="kwagei-long.png" alt="kwagei-long">
             <div class="links">
                 <a href="home-page.html">Dashboard</a>
@@ -122,41 +84,38 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <table>
-            <thead>
-                <th>#</th>
-                <th>Fullname</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Phone</th>
-                <th>Date of Birth</th>
-                <th>Profile Picture</th>
-            </thead>
-            <tbody class="display_staff">
-                <!-- <tr>
-                    <td>1.</td>
-                    <td>John Kollie</td>
-                    <td>john@gmail.com</td>
-                    <td>12th street</td>
-                    <td>0775647362</td>
-                    <td>October 9, 1998</td>
-                </tr>
-                <tr>
-                    <td>1.</td>
-                    <td>John Kollie</td>
-                    <td>john@gmail.com</td>
-                    <td>12th street</td>
-                    <td>0775647362</td>
-                    <td>October 9, 1998</td>
-                </tr> -->
-            </tbody>
-        </table>
+
+    <div class="dashboard_details">
+        <div class="first_row">
+            <div class="box1">
+                <div class="inner_box1">6</div>
+                <div class="inner_box2">Number Of Staff</div>
+            </div>
+            <div class="box2">
+                <div class="inner_box1">25</div>
+                <div class="inner_box2">Number Of Tasks</div>
+            </div>
+            <div class="box3">
+                <div class="inner_box1">20</div>
+                <div class="inner_box2">Completed Task</div>
+            </div>
+        </div>
+        <div class="second_row">
+            <div class="box4">
+                <div class="inner_box1">1</div>
+                <div class="inner_box2">Incompleted Task</div>
+            </div>
+            <div class="box5">
+                <div class="inner_box1">2</div>
+                <div class="inner_box2">Assign Task</div>
+            </div>
+            <div class="box6">
+                <div class="inner_box1">2</div>
+                <div class="inner_box2">Unassign Task</div>
+            </div>
+        </div>
+        
     </div>
-    <script src="./js/display-staff.js"></script>
-    <script src="./js/edit-staff.js"></script>
-    <script src="./js/delete-staff.js"></script>
 
 </body>
-
 </html>

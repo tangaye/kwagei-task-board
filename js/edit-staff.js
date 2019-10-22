@@ -47,8 +47,6 @@ function updateStaff(){
     staff_data[button_id].phone = contact_input.value;
     staff_data[button_id].dob = DOB_input.value;
 
-   
-
     localStorage.setItem('staff_data', JSON.stringify(staff_data));
 }
 
